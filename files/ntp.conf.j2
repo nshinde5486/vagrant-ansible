@@ -1,0 +1,5 @@
+# {{ ansible_managed }}
+driftfile /var/lib/ntp/ntp.drift
+server {{ ntpserver }}
+restrict 127.0.0.1
+restrict ::1
